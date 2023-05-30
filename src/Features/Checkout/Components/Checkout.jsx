@@ -4,7 +4,7 @@ import { useGlobalCtx } from '../../../Contexts/GlobalProvider';
 import Contact from './Contact'
 import Order from './Order'
 
-export function Checkout() {
+export default function Checkout() {
     const { register, handleSubmit } = useForm();
     const { getPayment } = useGlobalCtx();
     const onSubmit = (data) => getPayment(data);
