@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 0.9rem solid #0D3D4B;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px;
+        }
+
+        header p {
+            word-spacing: 5px;
+            color: "#475569";
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        header p:hover {
+            cursor: pointer;
+        }
+
+        header div {
+            display: flex;
+            color: #0D3D4B;
+        }
+
+        header div img:hover {
+            cursor: pointer;
+        }
+
+        .contentLeft {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .contentLeft p {
+            color: #0D3D4B;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .content img {
+            display: inline-block;
+        }
+
+        .content {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contentText {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .contentInfo {
+            text-align: center;
+            font-weight: 500;
+            font-size: medium;
+        }
+
+        .contentBtn {
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+            border-radius: 30px;
+            padding: 1.2rem 2rem;
+            background-color: #F2C852;
+            font-weight: bold;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .btnContainer {
+            text-align: center;
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 2rem 1.6rem;
+        }
+
+        .summary2,
+        .summary1 {
+            border: 1px solid rgba(223, 216, 216, 0.534);
+            padding-left: 0.8rem;
+        }
+
+        .summary2 h3,
+        .summary1 h3 {
+            color: #124E58;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .summaryFiled {
+            color: #475569;
+        }
+
+        .summaryFiled span {
+            font-weight: 600;
+            padding-left: 1rem;
+        }
+
+        .tbImage {
+            width: 4rem;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            margin: 2rem 2rem;
+        }
+
+        thead tr th {
+            font-weight: 600;
+            font-size: 14px;
+            color: #124E58;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+            text-align: left;
+            padding-bottom: 0.5rem;
+        }
+
+        .tbl_item {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tbl_item p {
+            font-weight: 400;
+            font-size: 16px;
+            color: #000316;
+            margin-left: 1rem;
+        }
+
+        tbody tr th {
+            padding: 0.5rem;
+            word-break: break-all;
+            overflow-wrap: break-word;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+        }
+
+        .tblTotal div {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+
+        }
+
+        .tblTotal div p {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="contentLeft">
+            <div>
+                <img src="https://i.ibb.co/cTpjVLQ/Frame-1.png" style="width:4rem; height: 2.5rem;" alt="" />
+            </div>
+            <p>Project <br /> Packers</p>
+        </div>
+        <p>March 24, 2023</p>
+    </header>
+    <main>
+        <section>
+            <div class="content">
+                <img src="https://i.ibb.co/dPz6jQm/shipping-loading-1.png" alt="">
+            </div>
+            <h1 class="contentText">Your Order is on its way</h1>
+            <p class="contentInfo">Please allow 24 hours to track your order</p>
+            <div class="btnContainer">
+                <button class="contentBtn">Track your order</button>
+            </div>
+        </section>
+        <section class="summary">
+            <div class="summary1">
+                <h3>SUMMARY:</h3>
+                <div class="summaryFiled">
+                    <p>Order: <span>#343895</span></p>
+                </div>
+                <div class="summaryFiled">
+                    <p>Order Date: <span>March 24, 2023</span></p>
+                </div>
+                <div class="summaryFiled">
+                    <p>Order Total: <span>$254.00</span></p>
+                </div>
+            </div>
+            <div class="summary2">
+                <h3>SHIPPING ADDRESS:</h3>
+                <div class="summaryFiled">
+                    <p>4517 Washington Ave. Manchester, Kentucky 39495</span></p>
+                </div>
+            </div>
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product List</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="tbl_item">
+                        <img class="tbImage"
+                            src="https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/f21_pro/navigation/v2/Navigation-SunsetOrange-427_600-pc.png.thumb.webp"
+                            alt="image" />
+                        <p>OTTERBOX COMMUTER SERIES Case for iPhone 12 & iPhone 12 Pro</p>
+                    </th>
+                    <th>1</th>
+                    <th>৳ 22,590.00tk </th>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="tblTotal" style="margin:2rem">
+            <div>
+                <p>Seller takes</p>
+                <span>৳ 22,590.00tk </span>
+            </div>
+            <div>
+                <p>US sales tax</p>
+                <span>৳ 22,590.00tk </span>
+            </div>
+            <div>
+                <p>Packers Fee</p>
+                <span>৳ 22,590.00tk </span>
+            </div>
+            <div>
+                <p>Estimated total</p>
+                <span style="font-weight: 
+                700; font-size: 20px;">৳ 22,590.00tk </span>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center; margin:2rem">
+            <button
+                style="background: #F2C852; color:#124E58;padding-top: 12px;padding-bottom: 12px; border:none; width: 100%;  display: inline-block;">Keep
+                Shopping with
+                us</button>
+        </div>
+    </main>
+</body>
+
+</html>
